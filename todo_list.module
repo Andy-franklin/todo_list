@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function todo_list_theme($existing, $type, $theme, $path) {
+    $variables = array(
+        'block--todo-list' => array(
+            'variables' => array(
+                'source_text' => NULL,
+            ),
+        ),
+    );
+    return $variables;
+}
